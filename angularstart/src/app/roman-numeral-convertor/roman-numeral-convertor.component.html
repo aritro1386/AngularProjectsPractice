@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Roman Numeral Convertor</title>
+</head>
+
+<body class="m-1 p-1">
+    <h3 class="bg-primary text-white p-3">Roman Numeral Convertor</h3>
+    <div class="my-1">
+        <div class="row">
+            <div class="col-sm-6">
+                <input class="form-control" #topicInput (input)="checkInput($event.target)" />
+            </div>
+            <div class="col-sm-6">
+                <label>{{convertedValue}}</label>
+            </div>
+        </div>
+        <button class="btn btn-sm btn-primary mt-1" (click)="convertToRoman(topicInput.value)">Convert</button>
+    </div>
+</body>
+
+</html>
